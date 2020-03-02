@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         auto-input-for-happymoney
 // @namespace    https://github.com/ask-and-go-to-the-blue/giftcard
-// @version      1.0.0
+// @version      1.0.1
 // @description  auto input for happymoney!
 // @author       ask-and-go-to-the-blue
 // @match        http://www.happymoney.co.kr/svc/cash/giftCardCharge.hm
