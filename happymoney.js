@@ -12,12 +12,14 @@
 (function() {
     'use strict';
 
+    // add textarea for inputting a message.
     var pinDiv = document.getElementById("pinDiv");
     var inputArea = document.createElement("textarea");
     inputArea.setAttribute("id", "inputPinNumbers");
     inputArea.setAttribute("style", "width: 770px; height:300px;");
     pinDiv.insertBefore(inputArea, pinDiv.childNodes[0]);
 
+    // add button for activation script.
     var fillDataBtn = document.createElement("input");
     fillDataBtn.setAttribute("type", "button");
     fillDataBtn.setAttribute("id", "fillDataBtn");
@@ -25,6 +27,7 @@
     fillDataBtn.setAttribute("value", "입력하기");
     pinDiv.insertBefore(fillDataBtn, pinDiv.childNodes[1]);
 
+    // add event for button.
     fillDataBtn.onclick = function() {
         var message = inputArea.value;
         var pinNumbers = message.match(/\d{4}-\d{4}-\d{4}-\d{4}/g);
